@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function maxArr(a) {    //传数组
+            let max = a[0];
+            for (let i = 0; i < a.length; i++) {
+                max = (max > a[i] ? max : a[i]);
+            }
+            return max;
+        }
+        let arr = [1, 9, 3, 7, 5];
+        console.log(maxArr(arr));
+
+        function maxAll() {    //传参数
+            let max = arguments[0];
+            for (let i = 0; i < arguments.length; i++) {
+                max = (max > arguments[i] ? max : arguments[i]);
+            }
+            return max;
+        }
+        console.log(maxAll(1, 9, 3, 7,55));
+    </script>
+</body>
+
+</html>

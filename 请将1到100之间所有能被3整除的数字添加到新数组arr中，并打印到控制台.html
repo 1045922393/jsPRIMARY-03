@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //请将1到100之间所有能被3整除的数字添加到新数组arr中，并打印到控制台
+    var arr = [];
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 == 0) {
+            arr.push(i);
+        }
+    }
+    console.log(arr);
+    //将a到b之间所有能被c整除的数字添加到数组并返回至函数里面
+    function collectChu(a, b, c) {
+        let arr = [];
+        for (let i = a; i <= b; i++) {
+            if (i % c == 0) {
+                arr.push(i);
+            }
+        }
+        return arr;
+    }
+    
+
+</script>
+
+</html>
